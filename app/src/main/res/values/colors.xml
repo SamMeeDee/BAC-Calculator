@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="statusGreen">#4cc93c</color>
+    <color name="statusOrange">#de8e2c</color>
+    <color name="statusRed">#e44101</color>
+    <color name="lockdown">#f7f7f7</color>
+</resources>

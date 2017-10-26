@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    tools:context="com.example.samd.baccalculator.MainPage">
+
+    <ToggleButton
+        android:id="@+id/gender"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textOff="@string/male"
+        android:textOn="@string/female"
+        android:layout_alignTop="@+id/weight_input"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:id="@+id/Weight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="21dp"
+        android:text="@string/weight" />
+
+    <EditText
+        android:id="@+id/weight_input"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Weight"
+        android:layout_toRightOf="@+id/Weight"
+        android:ems="10"
+        android:hint="@string/weight_input"
+        android:inputType="number"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gender"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:onClick="saveHandler"
+        android:text="@string/save" />
+
+    <TextView
+        android:id="@+id/drin_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/alc_percent_label"
+        android:layout_alignLeft="@+id/Weight"
+        android:layout_alignStart="@+id/Weight"
+        android:layout_marginBottom="16dp"
+        android:text="@string/drink_size" />
+
+    <RadioGroup
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="23dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_below="@+id/save"
+        android:layout_alignLeft="@+id/weight_input"
+        android:layout_alignStart="@+id/weight_input"
+        android:id="@+id/drink_size_group">
+
+        <RadioButton
+            android:id="@+id/one"
+            android:layout_width="67dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.58"
+            android:checked="false"
+            android:paddingRight="5dp"
+            android:text="@string/one" />
+
+        <RadioButton
+            android:id="@+id/five"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="20dp"
+            android:text="@string/five"
+            android:layout_weight="0.34" />
+
+        <RadioButton
+            android:id="@+id/twelve"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/twelve"
+            android:layout_weight="0.26" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/alc_percent_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="TextView"
+        tools:text="@string/alc_percent"
+        android:layout_below="@+id/drink_size_group"
+        android:layout_alignLeft="@+id/drin_size"
+        android:layout_alignStart="@+id/drin_size" />
+
+    <SeekBar
+        android:id="@+id/alc_percent_input"
+        style="@style/Widget.AppCompat.SeekBar"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/drink_size_group"
+        android:layout_alignStart="@+id/drink_size_group"
+        android:layout_alignTop="@+id/alc_percent_label"
+        android:max="25"
+        android:progress="5"
+        android:progressTint="#b3b3b3"
+        android:thumbTint="#b3b3b3" />
+
+    <TextView
+        android:id="@+id/per"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/per"
+        android:textSize="16sp"
+        android:layout_alignBaseline="@+id/percent_dyn"
+        android:layout_alignBottom="@+id/percent_dyn"
+        android:layout_toRightOf="@+id/percent_dyn"
+        android:layout_toEndOf="@+id/percent_dyn" />
+
+    <Button
+        android:id="@+id/add_drink"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/alc_percent_label"
+        android:layout_alignStart="@+id/alc_percent_label"
+        android:layout_below="@+id/per"
+        android:layout_marginTop="21dp"
+        android:onClick="addDrinkHandler"
+        android:text="@string/add_drink" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/add_drink"
+        android:layout_alignBottom="@+id/add_drink"
+        android:layout_alignEnd="@+id/gender"
+        android:layout_alignRight="@+id/gender"
+        android:onClick="resetHandler"
+        android:text="@string/reset"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/percent_dyn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/alc_percent_input"
+        android:layout_toEndOf="@+id/alc_percent_input"
+        android:layout_toRightOf="@+id/alc_percent_input"
+        android:text="5" />
+
+    <TextView
+        android:id="@+id/bac_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:text="@string/bacLevelDyn"
+        android:textSize="30sp"
+        android:layout_below="@+id/add_drink"
+        android:layout_toRightOf="@+id/alc_percent_label"
+        android:layout_toEndOf="@+id/alc_percent_label" />
+
+    <TextView
+        android:id="@+id/bacLevelDyn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.00"
+        android:textSize="30sp"
+        android:layout_alignBaseline="@+id/bac_level"
+        android:layout_alignBottom="@+id/bac_level"
+        android:layout_toRightOf="@+id/bac_level"
+        android:layout_toEndOf="@+id/bac_level"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp" />
+
+    <ProgressBar
+        android:id="@+id/bacLevelBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/bac_level"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:max="25"
+        android:progress="0" />
+
+    <TextView
+        android:id="@+id/yourStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/yourStatus"
+        android:textSize="24sp"
+        android:layout_below="@+id/bacLevelBar"
+        android:layout_alignRight="@+id/add_drink"
+        android:layout_alignEnd="@+id/add_drink" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/yourStatus"
+        android:layout_alignBottom="@+id/yourStatus"
+        android:layout_toLeftOf="@+id/percent_dyn"
+        android:layout_toStartOf="@+id/percent_dyn"
+        android:background="@color/statusGreen"
+        android:backgroundTintMode="add"
+        android:text="@string/status_green"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/lockdown_msg"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignBottom="@+id/alc_percent_input"
+        android:layout_centerHorizontal="true"
+        android:background="@color/lockdown"
+        android:text="You've had too much to drink!!"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textSize="50sp"
+        android:visibility="invisible" />
+
+</RelativeLayout>

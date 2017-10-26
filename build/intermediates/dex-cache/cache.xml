@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="D:\ProgramFiles\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\26.0.0-alpha1\support-annotations-26.0.0-alpha1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="D:\Libraries\Documents\Programs\Android\BACCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-26.0.0-alpha1_cbd29c7324756099e5c1488386d4f6508147e065\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Libraries\Documents\Programs\Android\BACCalculator\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ed91b48c462b43e0e322b6ee2ba95ef6281073d7">
+        <dex dex="D:\Libraries\Documents\Programs\Android\BACCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_28152c0a4dded1f637b164adda68452e233c1a78\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\.android\build-cache\ba93e513e4d28d67475dc5ee5de9790b9da4afc6\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="D:\Libraries\Documents\Programs\Android\BACCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2326235f0f43ba4953fee0a9b1ccec2c68f63cba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\.android\build-cache\596eec7fbd7b8331d5ec9cac25f0806ca845d3db\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="D:\Libraries\Documents\Programs\Android\BACCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_e30c445c362927ed37f4ac528bdd25054f49978b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\.android\build-cache\9633317d866f80060f1fa38102a46a49cc1bc9df\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="D:\Libraries\Documents\Programs\Android\BACCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_4bddbbb82bebe1953cb6fa457cd12586f0c0767e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\.android\build-cache\c659a1978c60fa62bb12c41ad75a92c0a8aebec4\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="D:\Libraries\Documents\Programs\Android\BACCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_a2cc1741f14e4e82ed0d82935983a117db1e5268\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\.android\build-cache\a1bd1ffbc023bf02e9eb10b057e2b2742a3fd30b\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="D:\Libraries\Documents\Programs\Android\BACCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5ce7ec77840e0a69b4c150bc1171d6080d771350\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="D:\Libraries\Documents\Programs\Android\BACCalculator\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="D:\Libraries\Documents\Programs\Android\BACCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_ccd5469740b7962ed1e1b9f6cf7e6f9f2025a5db\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\.android\build-cache\875e6b1514b330242e7eb5617c9f7c3c8a85dfdc\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="D:\Libraries\Documents\Programs\Android\BACCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_71cea0a99d291109f076ea3da7791964848eb08a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\.android\build-cache\94b15fb6b1036748727e526935d6986c5b472a1e\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="D:\Libraries\Documents\Programs\Android\BACCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_39f76cbb83d7e5ff929dbe3623743f2a3a26aaf5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\.android\build-cache\68135db8b542a88cdbdbf8ff8a08012e9e3a6f58\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="D:\Libraries\Documents\Programs\Android\BACCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_5dab4237cdab5604ae8f357ed49d3b52d5da6dff\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Android\.android\build-cache\0127368fd2bd684673ebfa0c5b1ded4c0ce78d7d\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\Libraries\Documents\Programs\Android\BACCalculator\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_cb530e707e84d49ff195ebb04d99bff0e57b1aed\classes.dex" />
+    </item>
+
+</items>
